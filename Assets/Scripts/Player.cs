@@ -25,14 +25,14 @@ public class Player : MonoBehaviour
     private float _shootCoolDowntime = 0f;
     private float _nextShootTime = 0.5f;
 
-    private int _lives = 5;
+    private int _lives = 8;
     
     void Start()
     {
         // UPDATE LIVES
         _uiManager.UpdateLives(_lives);
 
-        transform.position = new Vector3(0f, 0f, 0f); // The player starts in the middle of the scene.
+        // transform.position = new Vector3(0f, 0f, 0f); // The player starts in the middle of the scene.
     }
 
     
@@ -97,11 +97,11 @@ public class Player : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * Time.deltaTime * _speed * horizontalInput);
 
-        // before the player reaches -10 (y axis) we teleport it back
-        if (transform.position.y < -10f)
+        // before the player reaches -1 (y axis) we teleport it back
+        if (transform.position.y < 1f)
         {
             // TELEPORT back to this position
-            transform.position = new Vector3(0f, 1f, 0f);
+            transform.position = new Vector3(0f, 10f, 0f);
         }
     }
     

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField]
-    private float _enemySpeed = 6;
+    private float _enemySpeed = 10;
     
     void Update()
     {
@@ -13,11 +13,11 @@ public class Enemy : MonoBehaviour
         transform.Translate(Vector3.down * _enemySpeed * Time.deltaTime);
 
         // ENEMY FALLS AT A RANDOM RANGE 
-        if (transform.position.y < -3f)
+        if (transform.position.y < -10f)
         {
-           transform.position = new Vector3(Random.Range(-8f, 8f), 10f, 0f);
+           transform.position = new Vector3(Random.Range(-15.5f, 23f), 55f, 0f);
         }
-    }
+    }     
     // CHECK THE COLLISION OF OBJECTS BY ACCESSING THEIR TAGS
     private void OnTriggerEnter(Collider other)
     {   

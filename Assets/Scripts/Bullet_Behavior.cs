@@ -12,7 +12,7 @@ public class Bullet_Behavior : MonoBehaviour
         transform.Translate(Vector3.up * _pizzaBulletSpeed * Time.deltaTime);
         
         //DESTROY - Destroying of bullet once a certain height has been reached
-        if (transform.position.y > 25f)
+        if (transform.position.y > 50f)
         {
             Destroy(this.gameObject);
         }   

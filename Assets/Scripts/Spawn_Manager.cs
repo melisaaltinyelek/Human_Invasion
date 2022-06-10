@@ -13,7 +13,7 @@ public class Spawn_Manager : MonoBehaviour
     [SerializeField]
     private UI_Manager _uiManager;
    
-    private float _delay = 1.2f;
+    private float _delay = 0.8f;
     private bool _alive = true;
     
     void Start()
@@ -41,9 +41,9 @@ public class Spawn_Manager : MonoBehaviour
         while(_alive)
         {    // ASSIGN RANDOM ENEMYPREFAB
             _enemy_1Prefab = humans[GetRandomNumber()];
-            Instantiate(_enemy_1Prefab, new Vector3(Random.Range(-8f, 8f), 20f, 0), Quaternion.identity,this.transform);
+            Instantiate(_enemy_1Prefab, new Vector3(Random.Range(-15f, 20f), 50f, 0), Quaternion.identity,this.transform);
             yield return new WaitForSeconds(_delay);
-        }
+        } 
 
         yield return null;
     }
