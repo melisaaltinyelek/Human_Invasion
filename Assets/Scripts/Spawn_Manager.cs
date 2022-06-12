@@ -13,7 +13,7 @@ public class Spawn_Manager : MonoBehaviour
     [SerializeField]
     private UI_Manager _uiManager;
    
-    private float _delay = 0.8f;
+    private float _delay = 0.9f;
     private bool _alive = true;
     
     void Start()
