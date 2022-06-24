@@ -12,6 +12,7 @@ public class Camera_Movement : MonoBehaviour
 
     void Start()
     {
+        // Set camera to follow the player
         offset = transform.position - _followTarget.transform.position;
     }
 

@@ -13,7 +13,7 @@ public class Spawn_Manager : MonoBehaviour
     [SerializeField]
     private UI_Manager _uiManager;
    
-    private float _delay = 0.9f;
+    private float _delay = 1f;
     private bool _alive = true;
     
     void Start()
@@ -30,12 +30,14 @@ public class Spawn_Manager : MonoBehaviour
         return randomNumber;
     }
     
+    // GAME OVER text appears when player dies
     public void onPlayerDeath()
     {
         _alive = false;
         _uiManager.gameOver();
     }
     
+    // DEFINES how the enemies in level 1 are spawned
     IEnumerator SpawnSystem()
     {
         while(_alive)

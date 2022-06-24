@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7940449774768842329}
   - component: {fileID: 5016830791735507018}
   - component: {fileID: 7767698059023215039}
-  - component: {fileID: 4285582397052511779}
+  - component: {fileID: -6789666494810965832}
   m_Layer: 0
   m_Name: Princess
   m_TagString: Enemy_1
@@ -116,7 +116,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6, y: 1.6, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4285582397052511779
+--- !u!114 &-6789666494810965832
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

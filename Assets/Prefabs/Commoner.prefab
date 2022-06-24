@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3639014418899953712}
   - component: {fileID: 1222598197018207426}
   - component: {fileID: 2992319678526454354}
-  - component: {fileID: 9187734191658878835}
+  - component: {fileID: -1841694251986163729}
   m_Layer: 0
   m_Name: Commoner
   m_TagString: Enemy_1
@@ -116,7 +116,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6, y: 1.6, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &9187734191658878835
+--- !u!114 &-1841694251986163729
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -7,23 +7,23 @@ using TMPro;
 
 public class UI_Manager : MonoBehaviour
 {
-    [SerializeField]
-    private TextMeshProUGUI _livestext;
+    public AudioSource Gameover;
+    public AudioSource BackgroundMusic;
 
-    [SerializeField]
-    private TextMeshProUGUI _statustext;
+    // [SerializeField]
+    // private TextMeshProUGUI _statustext;
 
     
     // ADD GAMEOVER TEXT
     public void gameOver()
     {
-        _statustext.text = "Game Over!";
+        // _statustext.text = "Humans have captured you!";
+        // Stop background audio when player dies
+        BackgroundMusic.Stop();
+        // Play gameover audio when player dies
+        Gameover.Play();
+
     }
 
-    public void UpdateLives(int health)
-    {
-        // UPDATE TEXT
-        _livestext.text = "Lives: " + health;
-    }
 
 }
